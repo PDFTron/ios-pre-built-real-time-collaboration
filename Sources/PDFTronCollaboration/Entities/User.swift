@@ -104,12 +104,16 @@ import Tools
         }
         var docID = randomString(length: 10)
 
-        if let documentID = documentID {
+        if let documentID = documentID,
+           documentID.count > 0
+        {
             docID = documentID
         }
 
         var annots = [PTCollaborationAnnotation]()
-        if let annotations = annotations {
+        if let annotations = annotations,
+           annotations.count > 0
+        {
             annots = annotations
         }
 
