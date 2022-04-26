@@ -1,3 +1,7 @@
 # PDFTronCollaboration
 
-A description of this package.
+This repository contains the PDFTron iOS Pre-built Real-time Collaboration package for use with the Swift Package Manager (SPM).
+
+## Documentation
+
+https://pdftron.github.io/ios-real-time-collaboration/documentation/pdftroncollaboration
