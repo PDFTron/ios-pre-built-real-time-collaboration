@@ -4,4 +4,4 @@ This repository contains the PDFTron iOS Pre-built Real-time Collaboration packa
 
 ## Documentation
 
-https://pdftron.github.io/ios-pre-built-real-time-collaboration/documentation/pdftroncollaboration
+https://pdftron.github.io/ios-pre-built-real-time-collaboration/documentation/pdftroncollaboration/
