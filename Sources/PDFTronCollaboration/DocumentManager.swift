@@ -62,6 +62,8 @@ class DocumentManager
                         documents.append(doc)
                     }
                     completionHandler(documents)
+                }else{
+                    completionHandler(nil)
                 }
             case .failure(let error):
                 collabClient.processGraphQLError(error: error)
@@ -150,6 +152,8 @@ class DocumentManager
                     let document = data.addDocument
                     let doc = self.documentFromServerEntity(serverDocument: document, collabClient: collabClient)
                     completionHandler(doc)
+                }else{
+                    completionHandler(nil)
                 }
             case .failure(let error):
                 collabClient.processGraphQLError(error: error)

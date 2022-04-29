@@ -35,6 +35,8 @@ class AuthenticationManager
                 }
                 if let data = graphQLResult.data {
                     completionHandler(data.login)
+                }else{
+                    completionHandler(nil)
                 }
             case .failure(let error):
                 self.delegate?.authenticationManagerErrorOccurred(error: error)
@@ -62,6 +64,8 @@ class AuthenticationManager
                 }
                 if let data = graphQLResult.data {
                     completionHandler(data.loginAnonymous)
+                }else{
+                    completionHandler(nil)
                 }
             case .failure(let error):
                 self.delegate?.authenticationManagerErrorOccurred(error: error)
@@ -89,6 +93,8 @@ class AuthenticationManager
                 }
                 if let data = graphQLResult.data {
                     completionHandler(data.login)
+                }else{
+                    completionHandler(nil)
                 }
             case .failure(let error):
                 completionHandler(nil)
@@ -116,6 +122,8 @@ class AuthenticationManager
                 }
                 if let data = graphQLResult.data {
                     completionHandler(data.session)
+                }else{
+                    completionHandler(nil)
                 }
             case .failure(let error):
                 completionHandler(nil)
